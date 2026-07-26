@@ -1,7 +1,23 @@
 aid: faircraft
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/faircraft.png
 name: Faircraft
-description: Faircraft is a company surfaced as a portfolio company of kindred-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Faircraft is a biotechnology company creating a new class of cultivated materials, starting
+  with real leather grown in the lab from animal cells rather than raised on farms. Using cell biology
+  and protein engineering, it produces genuine leather (product lines FCL_001 through FCL_006) with the
+  look, feel, and performance of traditional hides but with a lower environmental footprint and no animal
+  farming, and customizable properties for fashion, automotive, and luxury brands. Backed by Kindred
+  Ventures, Faircraft is a materials-science company with no public developer or API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/faircraft/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Biotechnology
+- Cultivated Leather
+- Advanced Materials
+- Sustainability
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/faircraft-domain-security.yml
 - type: Website
   url: https://faircraft.bio/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
